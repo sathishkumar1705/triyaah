@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  :root {
+    --accent: 124, 58, 237;
+    --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+  }
+  
+  html {
+    font-family: system-ui, sans-serif;
+    background-color: #F6F6F6;
+  }
+  
+  code {
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+      Bitstream Vera Sans Mono, Courier New, monospace;
+  }
+  
+  header {
+    background-color: #FFFFFF;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  
+  .grid-item-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grid-item-search {
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grid-item img {
+    width: 200px;
+    height: 66px;
+  }
+  
+  .grid-item-search input {
+    position: relative;
+    height: 46px;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #242424;
+    background-color: transparent;
+    /* text-align: center; */
+    background-image: url("../assets/Search.jpg");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 10px 20px 12px 40px;
+  }
+  
+  input[type=text]:focus {
+    background-image: none;
+  }
+  
+  .grid-item-icons {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .icon-bar {
+    width: 100%;
+    /* Full-width */
+  }
+  
+  .icon-bar a {
+    /* float: left; Float links side by side */
+    text-align: center;
+    /*Center-align text */
+    width: 10%;
+    /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 12px 12px;
+    /* Some top and bottom padding */
+    color: black;
+    /* White text color */
+    font-size: 18px;
+    /* Increased font size */
+  }
+  
+  /* Navbar container */
+  .navbar {
+    overflow: hidden;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: #242424;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #242424;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #fff;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
