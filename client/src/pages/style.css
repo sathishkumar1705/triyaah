@@ -5,7 +5,8 @@
 	height: auto;
 	background-image: url("../assets/background.jpg");
 	background-repeat: no-repeat;
-	background-position: inherit;
+	background-position: center;
+	background-size: cover;
 	padding: 200px 0px;
 	display: flex;
 	align-items: center;
@@ -38,6 +39,7 @@
 	letter-spacing: 4px;
 	color: #fff;
 	margin-bottom: 20px;
+	text-transform: uppercase;
 }
 
 .section-1 .col-1 p {
@@ -55,7 +57,7 @@
 
 .section-1 .col-1 .btn-1 {
 	font-size: 15px;
-	width: 42%;
+	width: 45%;
 	height: 70px;
 	background-color: #d85737;
 	color: #fff;
@@ -80,7 +82,7 @@
 	border: 1px solid #fff;
 	color: #fff;
 	font-size: 15px;
-	width: 42%;
+	width: 45%;
 	height: 70px;
 	font-size: 15px;
 	font-weight: 400;
@@ -162,6 +164,7 @@
 	background-image: url("../assets/bg-card-1.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 	padding: 30px;
 	height: auto;
 	-webkit-transform: scale(1);
@@ -201,6 +204,7 @@
 	background-image: url("../assets/bg-card-2.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 	padding: 30px;
 	height: auto;
 	-webkit-transform: scale(1);
@@ -218,6 +222,7 @@
 	background-image: url("../assets/bg-card-3.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 	padding: 30px;
 	height: auto;
 	-webkit-transform: scale(1);
@@ -363,6 +368,13 @@
 	color: #fff;
 }
 
+.section-3 .container .col-3 {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+}
+
 .section-3 .container .card-container {
 	width: 100%;
 	display: flex;
@@ -474,6 +486,7 @@
 	background-image: url("../assets/collection-1.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 	padding: 20px;
 	height: auto;
 	-webkit-transform: scale(1);
@@ -487,19 +500,23 @@
 	background-image: url("../assets/collections-4.png");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 }
 
 .section-3 .container .col-3 .card-container .card-2 {
 	background-image: url("../assets/collections-5.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 }
 
 .section-3 .container .col-3 .card-container .card-3 {
 	background-image: url("../assets/collections-6.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 }
+
 
 .section-3 .container .card-container .card-1:hover {
 	-webkit-transform: scale(1.05);
@@ -514,6 +531,7 @@
 	background-image: url("../assets/collection-2.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 	padding: 20px;
 	height: auto;
 	-webkit-transform: scale(1);
@@ -532,6 +550,7 @@
 	background-image: url("../assets/collection-3.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 	padding: 20px;
 	height: auto;
 	-webkit-transform: scale(1);
@@ -699,5 +718,91 @@
 	background-size: cover;
 }
 
-
 /* ---------- SECTION-4 ------------- */
+
+/* ---------- SECTION-5 ------------- */
+
+.section-5 {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fbfbfb;
+}
+
+.section-5 .container {
+	width: 80%;
+	display: flex;
+	height: auto;
+	padding: 150px 0;
+	height: 600px;
+}
+
+.section-5 .container .col-1 {
+	width: 53%;
+	height: auto;
+	background-color: #f0f0f0;
+	position: relative;
+	z-index: 1;
+	margin: auto 0;
+}
+
+.section-5 .container .col-1 .content {
+	padding: 50px;
+}
+
+.section-5 .container .col-1 .content hr {
+	width: 20%;
+	border: 1px solid #000;
+	margin-bottom: 10px;
+}
+
+.section-5 .container .col-1 .content h3 {
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 43px;
+	letter-spacing: 2.60px;
+	margin-bottom: 20px;
+}
+
+.section-5 .container .col-1 .content p {
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 30px;
+	letter-spacing: 0em;
+	margin-bottom: 40px;
+}
+
+.section-5 .container .col-1 .content button {
+	width: 166px;
+	height: 60px;
+	background-color: transparent;
+	color: #d85737;
+	border: 1px solid #d85737;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 1.60px;
+	text-transform: uppercase;
+}
+
+.section-5 .container .col-1 .content button.btn-1:hover{
+	background-color: #d85737;
+	color: #fff;
+	border: 1px solid #d85737;
+}
+
+.section-5 .container .col-2 {
+	position: absolute;
+	display: flex;
+	justify-content: flex-end;
+	background-image: url("../assets/sec5-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right;
+}
+
+.section-5 .container .col-2 img {
+	width: 61%;
+}
+
+/* ---------- SECTION-5 ------------- */
